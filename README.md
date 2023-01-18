@@ -19,3 +19,6 @@
 7. Una vez creada utilizaremos el comando `cd` para dirigirnos a esa carpeta.
 8. Dentro, ejecutaremos el siguiente comando: `git init`.
 9. Para comprobar que hemos inicializado git correctamentene el directorio podemos usar el comando `ls -h`.
+10. Ahora crearemos el archivo `index.html` con la estructura básica de un documento html.
+> Si estamos en Visual Studio Code podemos escribir `!` o `html:5`.
+11. 
