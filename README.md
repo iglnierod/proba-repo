@@ -22,5 +22,4 @@
 #### Pruebas con el repositorio
 10. Ahora crearemos el archivo `index.html` con la estructura básica de un documento html.
  > Si estamos en Visual Studio Code podemos escribir `!` o `html:5` para crear dicha estructura.
-11. Para comprobar si Git está haciendo un seguimiento de nuestros archivos podremos usar `git status`.
-    Este comando nos devolverá los archivos que todavía no tenemos _staged_.
+11. Para comprobar si Git está haciendo un seguimiento de nuestros archivos podremos usar `git status`. Este comando nos devolverá los archivos que todavía no tenemos _staged_.
