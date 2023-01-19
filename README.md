@@ -34,9 +34,9 @@
 15. Para conectar nuestro repositorio remoto con el local usaremos este comando: `git remote add origin <link de tu repositorio>`.
 16. Una vez hecho esto, subiremos a GitHub nuestro repositorio local, para esto usaremos: `git push -u origin master`.
 > Y ya tendremos nuestro repositorio en la nube. Otros comandos muy útiles una vez hemos hecho esto son:
-```bash
-git pull
-git clone <link>
-```
+> ```bash
+> git pull
+> git clone <link>
+> ```
 > `git pull` descargará todo lo subido a nuestro repositorio local. Muy útil si trabajamos en el mismo proyecto desde varios dispositivos o sitios.
 > `git clone <link>` clonará todo lo subido al repositorio remoto.
