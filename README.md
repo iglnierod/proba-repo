@@ -2,7 +2,7 @@
 
 > Todos los comandos que aparecen en estas prácticas pueden ser ejecutados tanto en la CMD/Terminal como en la terminal de Visual Studio Code.
 
-## Práctica 1: creación e conexión de repositorios git
+## Práctica 1: creación y conexión de repositorios git
 
 #### En esta práctica, instalaremos Git, lo configuraremos y crearemos un repositorio, tanto local como remoto.
 
@@ -40,3 +40,13 @@
 > ```
 > `git pull` descargará todo lo subido a nuestro repositorio local. Muy útil si trabajamos en el mismo proyecto desde varios dispositivos o sitios.
 > `git clone <link>` clonará todo lo subido al repositorio remoto.
+
+## Práctica 2: actualizar y deshacer cambios en el repositorio
+1. El primer comando para esto será `git diff`. Este comando nos mostrará las diferencias entre el mismo archivo en distintas versiones específicas.
+2. Otro comando es `git show` que mostrará también diferencias, pero en este caso las diferencias entre 2 commits. 
+3. Un comando muy útil por si a la hora de hacer un commit nos equivocamos escribiendo el mensaje, podemos usar el siguiente comando: `git commit --amend -m "Mensaje de ejemplo"`. Esto cambiará únicamente el último commit.
+4. Para poder sacar uno o más archivos del proceso _staged/index_ usaremos el siguiente comando: `git restore <file>/*/.`.
+> En la mayoría de comandos de git si únicamente utilizamos el nombre del 
+f ichero el comando afectará solamente al especificado. Pero si deseamos 
+que el comando se aplique a todos los ficheros podremos usar `*` o `.`, 
+este último si queremos que los cambios se apliquen en el directorio en el que nos encontramos
