@@ -47,6 +47,21 @@
 3. Un comando muy útil por si a la hora de hacer un commit nos equivocamos escribiendo el mensaje, podemos usar el siguiente comando: `git commit --amend -m "Mensaje de ejemplo"`. Esto cambiará únicamente el último commit.
 4. Para poder sacar uno o más archivos del proceso _staged/index_ usaremos el siguiente comando: `git restore <file>/*/.`.
 > En la mayoría de comandos de git si únicamente utilizamos el nombre del 
-f ichero el comando afectará solamente al especificado. Pero si deseamos 
+fichero el comando afectará solamente al especificado. Pero si deseamos 
 que el comando se aplique a todos los ficheros podremos usar `*` o `.`, 
 este último si queremos que los cambios se apliquen en el directorio en el que nos encontramos
+5.El comando `git reset --hard` elimina los cambios realizados en el árbol de trabajo y en el área de preparación, restaurando la versión más reciente del commit.
+6.Si queremos eliminar los cambios del área de preparación pero mantener los cambios en el árbol de trabajo, podemos utilizar `git reset --soft`. Con este comando, los cambios se mantienen en el árbol de trabajo para que podamos seguir trabajando con ellos, pero se eliminan del área de preparación.
+7.Otra opción es `git reset HEAD <file>`, que saca el archivo especificado del área de preparación, pero mantiene los cambios en el árbol de trabajo.
+
+## Práctica 3: Ramas
+1. Con git branch podemos ver las ramas disponibles en nuestro repositorio y crear nuevas ramas. Simplemente especificamos el nombre de la nueva rama que queremos crear después del comando.
+2. Para movernos entre las diferentes ramas de nuestro repositorio, usamos `git checkout` seguido del nombre de la rama a la que queremos cambiar. Además, con `git checkout -b` podemos crear una nueva rama y cambiar a ella en un solo comando.
+3. Para combinar dos ramas en una sola, usamos `git merge`. Al especificar el nombre de la rama que queremos fusionar, Git tomará los cambios de ambas ramas y los combinará en una nueva rama que contendrá los cambios de ambas ramas.
+
+## Práctica 4: Repositorios remotos
+1. El comando `git remote` nos permite ver una lista de los repositorios remotos que hemos configurado en nuestro repositorio local. Si no hemos configurado ningún repositorio remoto, este comando no mostrará nada.
+2. `git remote` -v nos muestra la lista de los repositorios remotos y también nos indica la URL de cada uno de ellos. Este comando es muy útil para verificar que estamos trabajando con el repositorio correcto y que nuestra conexión es correcta.
+3. El comando `git push` se utiliza para enviar nuestros cambios al repositorio remoto.
+4. `git clone` se utiliza para clonar un repositorio remoto en nuestro ordenador y crear una copia local del repositorio.
+5. `git push origin <rama>` se utiliza para enviar los cambios que hemos hecho en una rama específica a nuestro repositorio remoto. 
